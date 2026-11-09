@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/app/app.css"
+        ],
+        "createdAt": "2026-09-27T12:33:26.697Z",
+        "reason": "Claude triage: L47 is the joined input-addon ($ prefix) restoring the same 2px ink border as its other sides, not a colored accent tab on a card"
+      }
+    ]
+  }
+}

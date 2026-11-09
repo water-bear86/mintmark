@@ -1,0 +1,241 @@
+{
+  "checkedAt": "2026-11-08T01:54:01.304Z",
+  "readOnly": true,
+  "matchAcrossEndpoints": true,
+  "scope": "Pinned-state RPC agreement and V2 CREATE2 compatibility, not operator independence, official endorsement, bytecode provenance or security audit.",
+  "canonicalArtifactComparison": {
+    "package": "@uniswap/v2-core@1.0.1",
+    "registryTarball": "https://registry.npmjs.org/@uniswap/v2-core/-/v2-core-1.0.1.tgz",
+    "tarballSha1": "af8f508bf183204779938969e2e54043e147d425",
+    "factoryRuntimeExactMatch": true,
+    "pairRuntimeExactMatch": true,
+    "pairCreationCodeHashExactMatch": true,
+    "routerRuntimeCompared": false
+  },
+  "wrappedHypeCaveat": "Nonzero EIP-1967 implementation/admin slots indicate a proxy trust/upgrade surface. Matching current bytecode is not a guarantee of immutable future behavior or proof of admin ownership.",
+  "sources": {
+    "addresses": "https://titanlocker.com/docs/uniswap-on-elysium",
+    "pairInitCodeHash": "https://raw.githubusercontent.com/Uniswap/v2-periphery/master/contracts/libraries/UniswapV2Library.sol",
+    "officialNetwork": "https://elysium.kinetiq.xyz/docs/connecting-to-elysium"
+  },
+  "results": [
+    {
+      "endpoint": "https://node.eleos.fun",
+      "chainId": 99901,
+      "blockNumber": "2220982",
+      "blockHash": "0x0cf7a02b5b8c6faf715ba10b75fbe707f3e3ef85b859bb550b43f39e57b83440",
+      "blockTimestamp": "1794102596",
+      "router": "0xE783DE89a7F0408687f051e3E6D0BEb62719EbAd",
+      "factory": "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2",
+      "wrappedHype": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+      "pairCodeHash": "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
+      "pairs": [
+        {
+          "index": "0",
+          "address": "0x10f964b6A82f9442bB20994551fdD5193346154a",
+          "token0": "0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65",
+          "token1": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+          "predictedAddress": "0x10f964b6A82f9442bB20994551fdD5193346154a",
+          "create2Proof": true,
+          "bidirectionalMapping": true
+        },
+        {
+          "index": "1",
+          "address": "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391",
+          "token0": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+          "token1": "0xBbf17b53380E2776D987a1bf3dc8CC600F4a2621",
+          "predictedAddress": "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391",
+          "create2Proof": true,
+          "bidirectionalMapping": true
+        }
+      ],
+      "code": {
+        "0xbA876237B0F021A6c6D852d6c26E107997cC5E81": {
+          "bytes": 2202,
+          "keccak256": "0x5706be52f64875fee65a2cec0d80e47a23d8793cbe85d214b48445e2d05f5353"
+        },
+        "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2": {
+          "bytes": 13859,
+          "keccak256": "0xbab145d02e7005f0d84c6c1639d39b799b0ea16df99ebbdaf5a14d9da820b4e0"
+        },
+        "0xE783DE89a7F0408687f051e3E6D0BEb62719EbAd": {
+          "bytes": 21902,
+          "keccak256": "0x90925ee364ecd060ac3cc5c02847caec51922a8e6c347a8cfb1ca5678b69258c"
+        },
+        "0xf098387f303B6bBfE9dA7CB16F70639b76430542": {
+          "bytes": 6961,
+          "keccak256": "0x5c8bd8778c99ee1d97fcf871bc2888edc3300657713f7f4fe608e05ce8e7b01f"
+        },
+        "0xDeae688C60778379F98f3E29c7e94d6e3934a30A": {
+          "bytes": 1681,
+          "keccak256": "0xa4b2186ab82fa36fb4ae158582e5615ea519e757c26c13ba4a33daaaed8902a7"
+        },
+        "0x10f964b6A82f9442bB20994551fdD5193346154a": {
+          "bytes": 11293,
+          "keccak256": "0x5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5"
+        },
+        "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391": {
+          "bytes": 11293,
+          "keccak256": "0x5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5"
+        }
+      },
+      "wrappedHypeProxySlots": {
+        "implementation": {
+          "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+          "value": "0x000000000000000000000000f098387f303b6bbfe9da7cb16f70639b76430542",
+          "address": "0xf098387f303B6bBfE9dA7CB16F70639b76430542"
+        },
+        "admin": {
+          "slot": "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+          "value": "0x000000000000000000000000deae688c60778379f98f3e29c7e94d6e3934a30a",
+          "address": "0xDeae688C60778379F98f3E29c7e94d6e3934a30A"
+        },
+        "beacon": {
+          "slot": "0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50",
+          "value": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "methods": {
+        "factoryDeployment": {
+          "hash": "0xe7e8f22ca690aaef4d3546947d8e4d8bc608a34fd73af0a2b88eb28003d50d53",
+          "from": "0x2179a60856e37dfeaaca0ab043b931fe224b27b6",
+          "contractAddress": "0xbbbcc62853a5fa27b93d6bab3e6f7ce841e25df2",
+          "blockNumber": "256053",
+          "blockHash": "0xf998dc7b6cc363c896c7220a7eef7941c5a5d7ce33de56f41bb15f79f61cfdf3",
+          "status": "success"
+        },
+        "pendingNonce": {
+          "address": "0x2179a60856e37dfeaaca0ab043b931fe224b27b6",
+          "blockTag": "pending",
+          "value": 38,
+          "note": "Live unpinned observation, may change between runs or providers."
+        },
+        "getLogs": {
+          "address": "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2",
+          "narrowRange": {
+            "fromBlock": "256053",
+            "toBlock": "258052",
+            "accepted": true,
+            "count": 0
+          },
+          "wideRange": {
+            "fromBlock": "256053",
+            "toBlock": "266052",
+            "accepted": false,
+            "error": "Block range too large, at most 2000 blocks per eth_getLogs.",
+            "reportedMaximumBlocks": 2000
+          }
+        }
+      }
+    },
+    {
+      "endpoint": "https://rpc.hips.family",
+      "chainId": 99901,
+      "blockNumber": "2220982",
+      "blockHash": "0x0cf7a02b5b8c6faf715ba10b75fbe707f3e3ef85b859bb550b43f39e57b83440",
+      "blockTimestamp": "1794102596",
+      "router": "0xE783DE89a7F0408687f051e3E6D0BEb62719EbAd",
+      "factory": "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2",
+      "wrappedHype": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+      "pairCodeHash": "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
+      "pairs": [
+        {
+          "index": "0",
+          "address": "0x10f964b6A82f9442bB20994551fdD5193346154a",
+          "token0": "0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65",
+          "token1": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+          "predictedAddress": "0x10f964b6A82f9442bB20994551fdD5193346154a",
+          "create2Proof": true,
+          "bidirectionalMapping": true
+        },
+        {
+          "index": "1",
+          "address": "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391",
+          "token0": "0xbA876237B0F021A6c6D852d6c26E107997cC5E81",
+          "token1": "0xBbf17b53380E2776D987a1bf3dc8CC600F4a2621",
+          "predictedAddress": "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391",
+          "create2Proof": true,
+          "bidirectionalMapping": true
+        }
+      ],
+      "code": {
+        "0xbA876237B0F021A6c6D852d6c26E107997cC5E81": {
+          "bytes": 2202,
+          "keccak256": "0x5706be52f64875fee65a2cec0d80e47a23d8793cbe85d214b48445e2d05f5353"
+        },
+        "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2": {
+          "bytes": 13859,
+          "keccak256": "0xbab145d02e7005f0d84c6c1639d39b799b0ea16df99ebbdaf5a14d9da820b4e0"
+        },
+        "0xE783DE89a7F0408687f051e3E6D0BEb62719EbAd": {
+          "bytes": 21902,
+          "keccak256": "0x90925ee364ecd060ac3cc5c02847caec51922a8e6c347a8cfb1ca5678b69258c"
+        },
+        "0xf098387f303B6bBfE9dA7CB16F70639b76430542": {
+          "bytes": 6961,
+          "keccak256": "0x5c8bd8778c99ee1d97fcf871bc2888edc3300657713f7f4fe608e05ce8e7b01f"
+        },
+        "0xDeae688C60778379F98f3E29c7e94d6e3934a30A": {
+          "bytes": 1681,
+          "keccak256": "0xa4b2186ab82fa36fb4ae158582e5615ea519e757c26c13ba4a33daaaed8902a7"
+        },
+        "0x10f964b6A82f9442bB20994551fdD5193346154a": {
+          "bytes": 11293,
+          "keccak256": "0x5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5"
+        },
+        "0x71B4bFa8A85c39F3b03f556a9C3F90f342367391": {
+          "bytes": 11293,
+          "keccak256": "0x5b83bdbcc56b2e630f2807bbadd2b0c21619108066b92a58de081261089e9ce5"
+        }
+      },
+      "wrappedHypeProxySlots": {
+        "implementation": {
+          "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+          "value": "0x000000000000000000000000f098387f303b6bbfe9da7cb16f70639b76430542",
+          "address": "0xf098387f303B6bBfE9dA7CB16F70639b76430542"
+        },
+        "admin": {
+          "slot": "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+          "value": "0x000000000000000000000000deae688c60778379f98f3e29c7e94d6e3934a30a",
+          "address": "0xDeae688C60778379F98f3E29c7e94d6e3934a30A"
+        },
+        "beacon": {
+          "slot": "0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50",
+          "value": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "methods": {
+        "factoryDeployment": {
+          "hash": "0xe7e8f22ca690aaef4d3546947d8e4d8bc608a34fd73af0a2b88eb28003d50d53",
+          "from": "0x2179a60856e37dfeaaca0ab043b931fe224b27b6",
+          "contractAddress": "0xbbbcc62853a5fa27b93d6bab3e6f7ce841e25df2",
+          "blockNumber": "256053",
+          "blockHash": "0xf998dc7b6cc363c896c7220a7eef7941c5a5d7ce33de56f41bb15f79f61cfdf3",
+          "status": "success"
+        },
+        "pendingNonce": {
+          "address": "0x2179a60856e37dfeaaca0ab043b931fe224b27b6",
+          "blockTag": "pending",
+          "value": 38,
+          "note": "Live unpinned observation, may change between runs or providers."
+        },
+        "getLogs": {
+          "address": "0xBbBcC62853a5fA27b93d6Bab3E6F7ce841E25Df2",
+          "narrowRange": {
+            "fromBlock": "256053",
+            "toBlock": "258052",
+            "accepted": true,
+            "count": 0
+          },
+          "wideRange": {
+            "fromBlock": "256053",
+            "toBlock": "266052",
+            "accepted": false,
+            "error": "eth_getLogs range above 2000 blocks",
+            "reportedMaximumBlocks": 2000
+          }
+        }
+      }
+    }
+  ]
+}

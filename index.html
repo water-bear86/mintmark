@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MintMark · Memecoin launchpad for Elysium</title>
+    <meta name="description" content="MintMark for Elysium: explore token launches, bonding curves and DEX graduation in the demo. Live deployment is pending." />
+    <meta name="theme-color" content="#F8F7F4" />
+    <meta property="og:title" content="MintMark · Memecoin launchpad for Elysium" />
+    <meta property="og:site_name" content="MintMark" />
+    <meta property="og:description" content="Same forge. New orbit." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Resolve the theme before first paint (see src/ui/theme.ts).
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem("mintmark.theme"); } catch (e) {}
+        if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+        if (t === "dark") document.querySelector('meta[name="theme-color"]').setAttribute("content", "#04181C");
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="/fonts/ChicagoFLF.ttf" as="font" type="font/ttf" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

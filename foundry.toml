@@ -1,0 +1,14 @@
+# MintMark contracts (docs/PLUGIN-MARKETPLACE-SPEC.md). Vendored from arc-dex v1.3 (same toolchain pins:
+# solc 0.8.28, paris, via-ir) — keep the pins until the port diverges deliberately.
+[profile.default]
+src = "contracts"
+test = "contracts/test"
+out = "contracts/out"
+libs = ["lib"]
+cache_path = "contracts/cache"
+solc_version = "0.8.28"
+auto_detect_solc = false
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
